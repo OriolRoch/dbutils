@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'maven'
+
+
+description = 'Some db utilities'
+    group = 'cat.teknos.m06'
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
