@@ -1,4 +1,4 @@
-image: gradle:alpine
+image: gradle:6.0.1-jdk11
 
 variables:
     GRADLE_OPTS: "-Dorg.gradle.deamon=false"
@@ -20,8 +20,8 @@ test:
     stage: test
     script: gradle check
     cache:
-    key: "$CI_COMMIT_REF_NAME"
-    policy: pull
-    paths:
-      - build
-      - .gradle
+        key: "$CI_COMMIT_REF_NAME"
+        policy: pull
+        paths:
+            - build
+            - .gradle

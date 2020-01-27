@@ -11,5 +11,6 @@ package cat.teknos.m06.dbutils;
  */
 public enum ValidCharset {
     ASCII,
-    ISO8859
+    ISO8859,
+    UTF8
 }
